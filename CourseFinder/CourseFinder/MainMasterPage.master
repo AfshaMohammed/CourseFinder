@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <form id="form1" runat="server">
+    <div id="wrapper">
+       
+    <div id='cssmenu'>
+        <ul style="margin-left:330px">
+           <li class=''><a href='Home.aspx'><span>Home</span></a></li>
+           <li class='has-sub'><a href='UserLogin.aspx'><span>UserLogin</span></a> </li>
+           <li class='has-sub'><a href='AdminLogin.aspx'><span>AdminLogin</span></a> </li>
+       </ul>
+</div>
+
+<div id="main">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</div>
+<div id="footer">
+<br />
+Copyrights&copy 2014
+</div>
+</div>
+</form>
+</body>
+</html>
